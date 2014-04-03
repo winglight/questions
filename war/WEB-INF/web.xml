@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Questions</servlet-name>
+		<servlet-class>cc.test.questions.QuestionsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Questions</servlet-name>
+		<url-pattern>/questions</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>cc.test.questions.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubmitResult</servlet-name>
+		<servlet-class>cc.test.questions.SubmitResultServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SubmitResult</servlet-name>
+		<url-pattern>/submit_result</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetCode</servlet-name>
+		<servlet-class>cc.test.questions.GetCodeServlet</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>GetCode</servlet-name>
+		<url-pattern>/get_code</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckUpdate</servlet-name>
+		<servlet-class>cc.test.questions.CheckUpdateServlet</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>CheckUpdate</servlet-name>
+		<url-pattern>/check_update</url-pattern>
+	</servlet-mapping>
+	
+	<!-- <servlet>
+		<servlet-name>import</servlet-name>
+		<servlet-class>cc.test.questions.ImportServlet</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>import</servlet-name>
+		<url-pattern>/import</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>importFile</servlet-name>
+		<servlet-class>cc.test.questions.ImportFileServlet</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>importFile</servlet-name>
+		<url-pattern>/import_file</url-pattern>
+	</servlet-mapping> -->
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
